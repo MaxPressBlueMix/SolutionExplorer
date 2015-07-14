@@ -1,6 +1,6 @@
 {
   "name": "Solution Explorer",
-  "buildpack": "https://github.com/cloudfoundry-community/cf-meteor-buildpack.git",
+  "buildpack": "https://github.com/ind1go/bluemix-buildpack-meteor.git",
   "version": "0.0.1",
   "description": "Find IBM solutions to business problems",
   "dependencies": {
