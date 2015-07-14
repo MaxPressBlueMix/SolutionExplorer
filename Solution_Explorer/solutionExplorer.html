@@ -1,0 +1,47 @@
+<head>
+  <title>solutionExplorer</title>
+</head>
+
+<body>
+  <h1>Maximum Press Awesome Solution Explorer</h1>
+<br><br>
+	Ask a question in natural-language form:
+	{{> question}}
+	<br><br>These documents might help:<br>
+	{{> answer}}
+	<br><br>
+	{{> info}}
+	
+</body>
+
+<template name="question">
+	<br>
+  <form name="natural" class="new-task">
+    <input type="text" name="quest" class='half-width-input' placeholder="Enter a natural language question:" />
+	</form>
+	<button>Submit</button>
+	</template>
+
+<template name="answer">
+	<p><table border=0>{{#each results}}
+	{{#if isNull id}}
+		<tr><td>{{label}}</td></tr>
+	{{else}}
+  	<tr><td><a href='{{id}}'>{{label}}</a></td><td>&nbsp;&nbsp;<small>(Score {{score}})</small></td></tr>
+		{{/if}}
+  	{{/each}}</table></p>
+
+<!--
+	<p>{{#each concepts}}
+  	{{abstract}}<br><br>
+  	{{/each}}</p>
+-->
+</template>
+
+<template name="info">
+	Document:<br><br>
+	<article> {{#each corpdoc}}
+  	{{{data}}}<br>
+  	{{/each}}
+  	</article>
+</template>
