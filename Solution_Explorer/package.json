@@ -1,5 +1,5 @@
 {
-  "name": "Solution Explorer",
+  "name": "Solution_Explorer",
   "buildpack": "https://github.com/ind1go/bluemix-buildpack-meteor.git",
   "version": "0.0.1",
   "description": "Find IBM solutions to business problems",
